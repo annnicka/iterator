@@ -5,6 +5,10 @@ public class Listik implements Iterable<Integer>{
 
     private ArrayList<Integer> listy;
 
+    public Listik() {
+        this.listy = new ArrayList<>();
+    }
+
     public void addNumber(int number){
         listy.add(number);
     }

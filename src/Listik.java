@@ -9,6 +9,10 @@ public class Listik implements Iterable<Integer>{
         listy.add(number);
     }
 
+    public int size(){
+        return listy.size();
+    }
+
 
     @Override
     public Iterator<Integer> iterator() {

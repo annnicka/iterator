@@ -7,16 +7,17 @@ public class IteratorListik implements Iterator<Integer> {
 
     public IteratorListik(Listik listik) {
         this.listik = listik;
-        this.aktualniIndex = listik.size();
+        this.aktualniIndex = listik.size()-1;
     }
 
     @Override
     public boolean hasNext() {
-        return false;
+        return aktualniIndex>-1;
     }
 
     @Override
     public Integer next() {
-        return 0;
+        aktualniIndex--;
+        return listik.get(aktualniIndex+1);
     }
 }

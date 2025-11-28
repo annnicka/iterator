@@ -13,6 +13,9 @@ public class Listik implements Iterable<Integer>{
         return listy.size();
     }
 
+    public Integer get(int index){
+        return listy.get(index);
+    }
 
     @Override
     public Iterator<Integer> iterator() {
